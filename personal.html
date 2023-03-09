@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/styles.css"/>
     <title>
-        Регистрация
+        
     </title>
 </head>
 
@@ -68,48 +68,209 @@
     </header>
     <main class="page-main">
 
-
-        <section class="registration">
+        <section class="navigation">
             <div class="container">
-                <div class="registration__heading-block">
-                    <h2 class="registration__heading">Регистрация</h2>
-                    <div class="registration__heading-link-block">
-                        Уже есть аккаунт? <a class="link" href="#" data-hystmodal="#auth">Войти</a>
+                <div class="navigation__inner">
+                    <ul class="navigation__left">
+                        <li>
+                            <a class="navigation__link navigation__link--active" href="./personal.html">Личные данные</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./events.html">Мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./courses.html">Курсы</a>
+                        </li>
+                    </ul>
+                    <ul class="navigation__right">
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#notifications">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#ns"/>
+                                </svg>
+                                <span>Уведомления</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#support">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#sup"/>
+                                </svg>
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-block">
+            <div class="container">
+                <div class="personal-block__inner">
+                    <div class="personal-block__left">
+                        <h2 class="personal-block__heading">Личная информация</h2>
+
+                        <div class="personal-block__avatar-wrapper">
+                            <div class="personal-block__avatar js-avatar-container" data-hystmodal="#avatar" title="Загрузить фотографию">
+                                <div class="personal-block__avatar-placeholder">
+                                    <svg width="84" height="84">
+                                        <use xlink:href="#ava"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-block__right">
+                        <form class="form js-form" action="#" data-need-validation>
+                            <div class="form__inputs form__inputs--wide">
+                                <div class="form__input-wrapper js-validation-wrapper">
+                                    <input class="form__input" type="text" placeholder="Фамилия" pattern="[A-Za-zА-Яа-я\-]*"
+                                           required>
+                                </div>
+                                <div class="form__input-wrapper js-validation-wrapper">
+                                    <input class="form__input" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-я\-]*"
+                                           required>
+                                </div>
+                                <div class="form__input-wrapper js-validation-wrapper">
+                                    <input class="form__input" type="text" placeholder="Отчество"
+                                           pattern="[A-Za-zА-Яа-я\-]*" required>
+                                </div>
+                                <div class="form__input-wrapper js-validation-wrapper">
+                                    <input class="form__input" type="date" min="1970-01-01" max="2010-12-31" value="2000-01-01" required>
+                                </div>
+                                <div class="form__input-wrapper js-validation-wrapper">
+                                    <input class="form__input" type="text" placeholder="Город"
+                                           pattern="[A-Za-zА-Яа-я\-]*" required>
+                                </div>
+                                <div class="form__input-wrapper js-validation-wrapper">
+                                    <select class="form__input js-custom-select" required>
+                                        <option value="">Гражданство</option>
+                                        <option value="1">Гражданство 1</option>
+                                        <option value="2">Гражданство 2</option>
+                                        <option value="3">Гражданство 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form__radios">
+                                <label class="form__radio-wrapper">
+                                    <input class="form__radio" name="group" type="radio" checked>
+                                    <span class="form__radio-label">Мужчина</span>
+                                </label>
+                                <label class="form__radio-wrapper">
+                                    <input class="form__radio" name="group" type="radio">
+                                    <span class="form__radio-label">Женщина</span>
+                                </label>
+                            </div>
+
+                            <div class="form__inputs form__inputs--wide">
+                                <div class="form__input-wrapper js-validation-wrapper">
+                                    <input class="form__input" type="email" placeholder="Email" required>
+                                </div>
+                                <div class="form__input-wrapper js-validation-wrapper">
+                                    <input class="form__input js-phone-input" type="tel" placeholder="Телефон"
+                                           data-parsley-phone required>
+                                </div>
+                            </div>
+
+                            <button class="button js-form-submit" type="submit">Сохранить</button>
+                        </form>
                     </div>
                 </div>
-                <ul class="registration__list">
-                    <li class="registration__item">
-                        <div class="registration__card">
-                            <h3 class="registration__card-title">Ученика</h3>
-                            <div class="registration__card-text">
-                                <p>Учавствуйте в мероприятиях и проходите наши онлайн-курсы для повышения своей
-                                    конкурентоспособности.</p>
-                                <ul>
-                                    <li>Получайте самые последние новости в сфере ИБ</li>
-                                    <li>Узнавайте первыми о самых крутых мероприятиях</li>
-                                    <li>Повышайте свои возможности поступления в лучшие вузы страны с помощью наших
-                                        курсов
-                                    </li>
-                                </ul>
+            </div>
+        </section>
+
+        <section class="personal-block">
+            <div class="container">
+                <div class="personal-block__inner">
+                    <div class="personal-block__left">
+                        <h2 class="personal-block__heading">Аккаунты в соц сетях</h2>
+                    </div>
+                    <div class="personal-block__right">
+                        <form class="form js-form" action="#" data-need-validation>
+                            <div class="form__inputs form__inputs--wide">
+                                <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
+                                    <input class="form__input" type="url" placeholder="VK">
+                                </div>
+                                <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
+                                    <input class="form__input" type="url" placeholder="Telegram">
+                                </div>
                             </div>
-                            <a class="button" href="./registration.html">Зарегистрироваться как ученик</a>
-                        </div>
-                    </li>
-                    <li class="registration__item">
-                        <div class="registration__card">
-                            <h3 class="registration__card-title">Куратора</h3>
-                            <div class="registration__card-text">
-                                <p>Формируйте команды своих учеников для быстрой регистарции на командные соревнования.</p>
-                                <ul>
-                                    <li>Получайте самые последние новости в сфере ИБ</li>
-                                    <li>Узнавайте первыми о самых крутых мероприятиях</li>
-                                    <li>Заявляйте команды на соревнования самым удобным способом</li>
-                                </ul>
+
+                            <button class="button js-form-submit" type="submit">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-block">
+            <div class="container">
+                <div class="personal-block__inner">
+                    <div class="personal-block__left">
+                        <h2 class="personal-block__heading">Изменение пароля</h2>
+                    </div>
+                    <div class="personal-block__right">
+                        <form class="form js-form" action="#" data-need-validation>
+                            <div class="form__inputs form__inputs--wide">
+                                <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
+                                    <input class="form__input" type="password" placeholder="Текущий пароль" minlength="12" required>
+                                </div>
+                                <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
+                                    <input class="form__input" type="password" placeholder="Новый пароль" minlength="12" required>
+                                </div>
                             </div>
-                            <a class="button" href="./curator-registration.html">Зарегистрироваться как куратор</a>
+
+                            <button class="button js-form-submit" type="submit">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-block">
+            <div class="container">
+                <div class="personal-block__inner">
+                    <div class="personal-block__left">
+                        <h2 class="personal-block__heading">Документы</h2>
+                        <div class="personal-block__description">
+                            Необходимы для быстрой регистрации на меропрития и соревнования
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="personal-block__right">
+                        <form class="form js-form" action="#" data-need-validation>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-block">
+            <div class="container">
+                <div class="personal-block__inner">
+                    <div class="personal-block__left">
+                        <h2 class="personal-block__heading">Портфолио</h2>
+                    </div>
+                    <div class="personal-block__right">
+                        <form class="form js-form" action="#" data-need-validation>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-block">
+            <div class="container">
+                <div class="personal-block__inner">
+                    <div class="personal-block__left">
+                        <h2 class="personal-block__heading">Удалить профиль</h2>
+                    </div>
+                    <div class="personal-block__right">
+                        <button class="button button--white" type="button" data-hystmodal="#delete">Удалить профиль</button>
+                    </div>
+                </div>
             </div>
         </section>
 
