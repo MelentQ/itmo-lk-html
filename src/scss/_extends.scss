@@ -1,0 +1,253 @@
+%fs-hero {
+  font-weight: 700;
+  font-size: 18rem;
+  line-height: 1;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 6rem;
+  }
+}
+
+%fs-button {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.4rem;
+  }
+}
+
+%fs-h-2 {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 2.8rem;
+  }
+}
+
+%fs-h-3 {
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 1.15;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 2.4rem;
+  }
+}
+
+%fs-h-4 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 1.15;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 2.2rem;
+  }
+}
+
+%fs-h-5 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1.15;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}
+
+%fs-body-l {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.2;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}
+
+%fs-body-m {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.2;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.4rem;
+  }
+}
+
+%fs-body-s {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
+}
+
+%fs-body-xs {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.2;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1rem;
+  }
+}
+
+%fs-roboto-l {
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 1;
+  font-family: 'Roboto Mono', monospace;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+%fs-roboto-m {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1;
+  font-family: 'Roboto Mono', monospace;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}
+
+%fs-roboto-s {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-family: 'Roboto Mono', monospace;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.6rem;
+  }
+}
+
+%fs-roboto-xs {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: 'Roboto Mono', monospace;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.4rem;
+  }
+}
+
+%fs-roboto-xl {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-family: 'Roboto Mono', monospace;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.4rem;
+  }
+}
+
+%interactive {
+  transition: opacity $tt $te;
+
+  &:focus {
+    opacity: 0.75;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+%interactive-outline {
+  transition: opacity $tt $te;
+
+  &:focus {
+    outline: 0.2rem dotted $primary-900;
+    outline-offset: 0.2rem;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+%interactive-svg-stroke-button {
+  transition: background-color $tt $te, border-color $tt $te;
+
+  &:focus {
+    background-color: $primary-400;
+    border-color: $primary-400;
+
+    svg {
+      stroke: $grayscale-100;
+    }
+  }
+
+  &:hover {
+    background-color: $primary-500;
+    border-color: $primary-500;
+
+    svg {
+      stroke: $grayscale-100;
+    }
+  }
+}
+
+%interactive-svg-fill-button {
+  transition: background-color $tt $te, border-color $tt $te;
+
+  &:focus {
+    background-color: $primary-400;
+    border-color: $primary-400;
+
+    svg {
+      fill: $grayscale-100;
+    }
+  }
+
+  &:hover {
+    background-color: $primary-500;
+    border-color: $primary-500;
+
+    svg {
+      fill: $grayscale-100;
+    }
+  }
+}
+
+
+
+%interactive-white-btn{
+  transition: background-color $tt $te, border-color $tt $te;
+  &:focus {
+    background-color: $grayscale-400;
+  }
+
+  &:hover {
+    background-color: $grayscale-200;
+  }
+}
+
+%interactive-button-on-dark{
+  background-color: $grayscale-100;
+  color: $primary-700;
+
+  transition: background-color $tt $te, border-color $tt $te, color $tt $te;
+
+  &:focus {
+    background-color: $grayscale-400;
+    color: $primary-900;
+  }
+
+  &:hover {
+    background-color: $grayscale-200;
+    color: $primary-900;
+  }
+}

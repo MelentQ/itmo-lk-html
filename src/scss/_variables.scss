@@ -1,0 +1,46 @@
+:root {
+  --max-container-width: 160rem;
+  --content-padding: 4rem;
+
+  --fs-html: 0.595238095vw;
+
+  @media screen and (max-width: 1200px) {
+    --content-padding: 2rem;
+    --fs-html: 10px;
+  }
+
+  @media screen and (min-width: 1681px) {
+    --fs-html: 10px;
+  }
+}
+
+// fonts
+$fs-body: 1.6rem;
+$lh: 1.2;
+$font: 'Inter', sans-serif;
+
+// animation
+$tt: 0.3s; // transition time
+$te: ease; // transition easing
+
+// colors
+$red: #ED1919;
+$yellow: #F7ED92;
+$primary-brand: #EC0B43;
+$primary-900: #272862;
+$primary-700: #37387B;
+$primary-500: #4F51AE;
+$primary-400: #6062CA;
+$secondary: #55B2E5;
+$grayscale-900: #21222E;
+$grayscale-600: #A4A5BB;
+$grayscale-500: #E1E3EA;
+$grayscale-400: #E5E8EE;
+
+$grayscale-300: #cbdcf7;
+// $grayscale-300: #EFF1F4;
+
+$grayscale-200: #94d3f3;
+// $grayscale-200: #F5F7F8;
+
+$grayscale-100: #FFFFFF;

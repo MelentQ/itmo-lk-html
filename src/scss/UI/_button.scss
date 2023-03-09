@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1.5rem;
+  background-color: #304659;
+  border-radius: 0.4rem;
+  color: white;
+
+  width: fit-content;
+
+  @extend %fs-button;
+
+  @extend %interactive;
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+
+  // .button--arrow
+  &--arrow {
+    &::after {
+      content: '>';
+    }
+  }
+
+  &--wide {
+    width: 100%;
+  }
+}

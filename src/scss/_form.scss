@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  // .form__input
+  &__input {
+    padding: 1.6rem;
+    background-color: #E1E9F0;
+    color: #8298AB;
+  }
+}

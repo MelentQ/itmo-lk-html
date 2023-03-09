@@ -1,0 +1,37 @@
+.modal {
+  padding: 3.2rem;
+  background-color: white;
+
+  // .modal__heading-block
+  &__heading-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    margin-bottom: 2.4rem;
+  }
+
+  // .modal__heading
+  &__heading {
+    @extend %fs-body-l;
+    font-weight: 700;
+  }
+
+  &__heading-link {
+    @extend %fs-body-s;
+  }
+
+  &__description {
+    margin-bottom: 2.4rem;
+    @extend %fs-body-s;
+  }
+
+  // .modal__link
+  &__link {
+    display: block;
+    width: fit-content;
+    margin: 2.4rem auto 0;
+    @extend %fs-body-s;
+  }
+}

@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  // .socials__item
+  &__item {
+  }
+
+  // .socials__link
+  &__link {
+    @extend %interactive;
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

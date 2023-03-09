@@ -1,0 +1,66 @@
+.registration {
+  padding: 6.4rem 0;
+  // .registration__heading-block
+  &__heading-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .registration__heading
+  &__heading {
+    @extend %fs-h-2;
+    margin-bottom: 6rem;
+  }
+
+  // .registration__heading-link
+  &__heading-link-block {
+    @extend %fs-body-s;
+  }
+
+  // .registration__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  // .registration__item
+  &__item {
+  }
+
+  // .registration__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 5.6rem;
+    border: 1px solid #E2E9F0;
+    height: 100%;
+  }
+
+  // .registration__card-title
+  &__card-title {
+    @extend %fs-h-4;
+  }
+
+  // .registration__card-text
+  &__card-text {
+    flex-grow: 1;
+    @extend %fs-body-m;
+
+    p {
+      margin-bottom: 2.4rem;
+    }
+
+    ul, ol {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      margin: 2.4rem 0;
+
+      list-style: inside;
+    }
+  }
+}
