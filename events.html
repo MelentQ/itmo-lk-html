@@ -73,10 +73,10 @@
                 <div class="navigation__inner">
                     <ul class="navigation__left">
                         <li>
-                            <a class="navigation__link navigation__link--active" href="./personal.html">Личные данные</a>
+                            <a class="navigation__link" href="./personal.html">Личные данные</a>
                         </li>
                         <li>
-                            <a class="navigation__link" href="./events.html">Мероприятия</a>
+                            <a class="navigation__link navigation__link--active" href="./events.html">Мероприятия</a>
                         </li>
                         <li>
                             <a class="navigation__link" href="./courses.html">Курсы</a>
@@ -104,256 +104,77 @@
             </div>
         </section>
 
-        <section class="personal-block">
+        <section class="sub-navigation">
             <div class="container">
-                <div class="personal-block__inner">
-                    <div class="personal-block__left">
-                        <h2 class="personal-block__heading">Личная информация</h2>
-
-                        <div class="personal-block__avatar-wrapper">
-                            <div class="personal-block__avatar js-avatar-container" data-hystmodal="#avatar" title="Загрузить фотографию">
-                                <div class="personal-block__avatar-placeholder">
-                                    <svg width="84" height="84">
-                                        <use xlink:href="#ava"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="personal-block__right">
-                        <form class="form js-form" action="#" data-need-validation>
-                            <div class="form__inputs form__inputs--wide">
-                                <div class="form__input-wrapper js-validation-wrapper">
-                                    <input class="form__input" type="text" placeholder="Фамилия" pattern="[A-Za-zА-Яа-я\-]*"
-                                           required>
-                                </div>
-                                <div class="form__input-wrapper js-validation-wrapper">
-                                    <input class="form__input" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-я\-]*"
-                                           required>
-                                </div>
-                                <div class="form__input-wrapper js-validation-wrapper">
-                                    <input class="form__input" type="text" placeholder="Отчество"
-                                           pattern="[A-Za-zА-Яа-я\-]*" required>
-                                </div>
-                                <div class="form__input-wrapper js-validation-wrapper">
-                                    <input class="form__input" type="date" min="1970-01-01" max="2010-12-31" value="2000-01-01" required>
-                                </div>
-                                <div class="form__input-wrapper js-validation-wrapper">
-                                    <input class="form__input" type="text" placeholder="Город"
-                                           pattern="[A-Za-zА-Яа-я\-]*" required>
-                                </div>
-                                <div class="form__input-wrapper js-validation-wrapper">
-                                    <select class="form__input js-custom-select" required>
-                                        <option value="">Гражданство</option>
-                                        <option value="1">Гражданство 1</option>
-                                        <option value="2">Гражданство 2</option>
-                                        <option value="3">Гражданство 3</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form__radios">
-                                <label class="form__radio-wrapper">
-                                    <input class="form__radio" name="group" type="radio" checked>
-                                    <span class="form__radio-label">Мужчина</span>
-                                </label>
-                                <label class="form__radio-wrapper">
-                                    <input class="form__radio" name="group" type="radio">
-                                    <span class="form__radio-label">Женщина</span>
-                                </label>
-                            </div>
-
-                            <div class="form__inputs form__inputs--wide">
-                                <div class="form__input-wrapper js-validation-wrapper">
-                                    <input class="form__input" type="email" placeholder="Email" required>
-                                </div>
-                                <div class="form__input-wrapper js-validation-wrapper">
-                                    <input class="form__input js-phone-input" type="tel" placeholder="Телефон"
-                                           data-parsley-phone required>
-                                </div>
-                            </div>
-
-                            <button class="button js-form-submit" type="submit">Сохранить</button>
-                        </form>
-                    </div>
+                <div class="sub-navigation__inner">
+                    <ul class="sub-navigation__list">
+                        <li>
+                            <a class="link active" href="#">Мои мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Архив мероприятий</a>
+                        </li>
+                    </ul>
+                    <ul class="sub-navigation__list">
+                        <li>
+                            <a class="link" href="#">Календарь мероприятий центра</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="personal-block">
+        <section class="events">
             <div class="container">
-                <div class="personal-block__inner">
-                    <div class="personal-block__left">
-                        <h2 class="personal-block__heading">Аккаунты в соц сетях</h2>
-                    </div>
-                    <div class="personal-block__right">
-                        <form class="form js-form" action="#" data-need-validation>
-                            <div class="form__inputs form__inputs--wide">
-                                <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
-                                    <input class="form__input" type="url" placeholder="VK">
+                <div class="events__inner">
+                    <h2 class="events__heading">Мои мероприятия</h2>
+                    <ul class="events__list">
+                        <li>
+                            <div class="card" data-hystmodal="#event">
+                                <div class="card__image">
+                                    <img src="img/placeholder.jpg" alt="Placeholder">
+                                    <ul class="card__tags">
+                                        <li class="card__tag">Соревнование</li>
+                                    </ul>
                                 </div>
-                                <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
-                                    <input class="form__input" type="url" placeholder="Telegram">
+                                <h3 class="card__heading">Название мероприятия</h3>
+                                <ul class="card__list">
+                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
+                                    <li class="card__list-item">Очно - заочно</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card" data-hystmodal="#event">
+                                <div class="card__image">
+                                    <img src="img/placeholder.jpg" alt="Placeholder">
+                                    <ul class="card__tags">
+                                        <li class="card__tag">Соревнование</li>
+                                    </ul>
                                 </div>
+                                <h3 class="card__heading">Название мероприятия</h3>
+                                <ul class="card__list">
+                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
+                                    <li class="card__list-item">Очно - заочно</li>
+                                </ul>
                             </div>
-
-                            <button class="button js-form-submit" type="submit">Сохранить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="personal-block">
-            <div class="container">
-                <div class="personal-block__inner">
-                    <div class="personal-block__left">
-                        <h2 class="personal-block__heading">Изменение пароля</h2>
-                    </div>
-                    <div class="personal-block__right">
-                        <form class="form js-form" action="#" data-need-validation>
-                            <div class="form__inputs form__inputs--wide">
-                                <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
-                                    <input class="form__input" type="password" placeholder="Текущий пароль" minlength="12" required>
+                        </li>
+                        <li>
+                            <div class="card" data-hystmodal="#event">
+                                <div class="card__image">
+                                    <img src="img/placeholder.jpg" alt="Placeholder">
+                                    <ul class="card__tags">
+                                        <li class="card__tag">Соревнование</li>
+                                    </ul>
                                 </div>
-                                <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
-                                    <input class="form__input" type="password" placeholder="Новый пароль" minlength="12" required>
-                                </div>
+                                <h3 class="card__heading">Название мероприятия</h3>
+                                <ul class="card__list">
+                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
+                                    <li class="card__list-item">Очно - заочно</li>
+                                </ul>
                             </div>
-
-                            <button class="button js-form-submit" type="submit">Сохранить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="personal-block">
-            <div class="container">
-                <div class="personal-block__inner">
-                    <div class="personal-block__left">
-                        <h2 class="personal-block__heading">Документы</h2>
-                        <div class="personal-block__description">
-                            Необходимы для быстрой регистрации на меропрития и соревнования
-                        </div>
-                    </div>
-                    <div class="personal-block__right">
-                        <form class="form js-form" action="#" data-need-validation>
-                            <div class="form__inputs form__inputs--wide">
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload js-toggle-14-target">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf" required>
-                                    <span class="form__file-label js-file-upload-text" data-default="Ксерокопия паспорта (jpg, pdf)">Ксерокопия паспорта (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                            </div>
-
-                            <label class="form__checkbox-wrapper">
-                                <input class="form__checkbox js-toggle-14" type="checkbox">
-                                <span class="form__checkbox-label">Еще нет паспорта (до 14 лет)</span>
-                            </label>
-
-                            <div class="form__inputs form__inputs--wide">
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload js-toggle-14-not-target disabled">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf">
-                                    <span class="form__file-label js-file-upload-text" data-default="Ксерокопия свидетельства о рождении (jpg, pdf)">Ксерокопия свидетельства о рождении (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload js-toggle-14-not-target disabled">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf">
-                                    <span class="form__file-label js-file-upload-text" data-default="Согласие законного представителя в мероприятиях центра (jpg, pdf)">Согласие законного представителя в мероприятиях центра (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                                <a class="link form__link toggle-if-14" style="display: none;" href="#" download>Шаблон согласия</a>
-                            </div>
-
-                            <button class="button js-form-submit" type="submit">Сохранить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="personal-block">
-            <div class="container">
-                <div class="personal-block__inner">
-                    <div class="personal-block__left">
-                        <h2 class="personal-block__heading">Прочие документы</h2>
-                        <div class="personal-block__description">
-                            Необходимы для некоторых форматов мероприятий. Их можно будет заполнить отдельно, при регистрации на мероприятие
-                        </div>
-                    </div>
-                    <div class="personal-block__right">
-                        <form class="form js-form" action="#" data-need-validation>
-                            <div class="form__inputs form__inputs--wide">
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf" required>
-                                    <span class="form__file-label js-file-upload-text">Ксерокопия документа (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf" required>
-                                    <span class="form__file-label js-file-upload-text">Ксерокопия документа (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf" required>
-                                    <span class="form__file-label js-file-upload-text">Ксерокопия документа (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                            </div>
-
-                            <button class="button js-form-submit" type="submit">Сохранить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="personal-block">
-            <div class="container">
-                <div class="personal-block__inner">
-                    <div class="personal-block__left">
-                        <h2 class="personal-block__heading">Портфолио</h2>
-                        <div class="personal-block__description">
-                            Дипломы и грамоты за победы и участие
-                        </div>
-                    </div>
-                    <div class="personal-block__right">
-                        <form class="form js-form" action="#" data-need-validation>
-                            <div class="form__inputs form__inputs--wide">
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf" required>
-                                    <span class="form__file-label js-file-upload-text">Ксерокопия документа (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf" required>
-                                    <span class="form__file-label js-file-upload-text">Ксерокопия документа (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                                <label class="form__file-wrapper js-validation-wrapper js-file-upload">
-                                    <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf" required>
-                                    <span class="form__file-label js-file-upload-text">Ксерокопия документа (jpg, pdf)</span>
-                                    <span class="form__file-limit">до 5 мб</span>
-                                </label>
-                            </div>
-
-                            <button class="button js-form-submit" type="submit">Сохранить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="personal-block">
-            <div class="container">
-                <div class="personal-block__inner">
-                    <div class="personal-block__left">
-                        <h2 class="personal-block__heading">Удалить профиль</h2>
-                    </div>
-                    <div class="personal-block__right">
-                        <button class="button button--white" type="button" data-hystmodal="#delete">Удалить профиль</button>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
