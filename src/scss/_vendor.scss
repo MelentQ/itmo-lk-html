@@ -24,13 +24,39 @@
 
 .hystmodal {
     display: flex;
+
+    @include breakpoint(tablet) {
+        display: grid;
+    }
+}
+
+.hystmodal__close {
+    display: none;
+
+    @include breakpoint(tablet) {
+        display: block;
+    }
+
 }
 
 .hystmodal__window {
     width: 35.5rem;
 
+    @include breakpoint(tablet) {
+        width: calc(100vw - 2rem);
+    }
+
     &--wide {
         width: 68rem;
+
+        @include breakpoint(tablet) {
+            width: calc(100vw - 2rem);
+        }
+    }
+
+    &--menu {
+        width: 100vw;
+        height: 100vh;
     }
 }
 

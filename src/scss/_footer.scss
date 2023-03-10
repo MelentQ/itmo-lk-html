@@ -14,6 +14,10 @@
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 3fr 3fr;
     gap: 3rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   // .footer__menu-block
@@ -21,6 +25,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
+    @include breakpoint(tablet) {
+
+    }
   }
 
   // .footer__menu-block-link
@@ -72,17 +80,30 @@
     color: rgba(white, 0.5);
 
     margin-top: 9rem;
+
+    @include breakpoint(tablet) {
+      margin-top: 4rem;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
 
   // .footer__copyright
   &__copyright {
     grid-column: span 2;
+    @include breakpoint(tablet) {
+      grid-column: span 1;
+    }
   }
 
   // .footer__policy
   &__policy {
     grid-column: span 2;
     @extend %interactive;
+
+    @include breakpoint(tablet) {
+      grid-column: span 1;
+    }
   }
 
   // .footer__made-by

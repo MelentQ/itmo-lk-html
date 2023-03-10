@@ -8,6 +8,10 @@
     --content-padding: 2rem;
   }
 
+  @media screen and (max-width: 1024px) {
+    --fs-html: 10px;
+  }
+
   @media screen and (min-width: 1681px) {
     --fs-html: 10px;
   }

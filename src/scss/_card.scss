@@ -28,6 +28,10 @@
     width: 100%;
     height: 37.5rem;
 
+    @include breakpoint(tablet) {
+      height: 24rem;
+    }
+
     img {
       position: absolute;
       top: 0;
@@ -50,6 +54,8 @@
     gap: 1.5rem;
 
     width: calc(50% - 3rem);
+
+    @extend %fs-body-s;
   }
 
   &__tag,

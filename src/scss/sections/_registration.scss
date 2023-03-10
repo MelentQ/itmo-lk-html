@@ -1,16 +1,26 @@
 .registration {
   padding: 6.4rem 0;
+
+  @include breakpoint(tablet) {
+    padding: 3rem 0;
+  }
+
   // .registration__heading-block
   &__heading-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-bottom: 6rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 3rem;
+    }
   }
 
   // .registration__heading
   &__heading {
     @extend %fs-h-2;
-    margin-bottom: 6rem;
   }
 
   // .registration__heading-link
@@ -23,6 +33,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
 
   // .registration__item
@@ -37,6 +52,10 @@
     padding: 5.6rem;
     border: 1px solid #E2E9F0;
     height: 100%;
+
+    @include breakpoint(tablet) {
+      padding: 2rem;
+    }
   }
 
   // .registration__card-title

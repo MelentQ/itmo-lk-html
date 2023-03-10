@@ -18,13 +18,21 @@
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
+
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+
+    @include breakpoint(tablet) {
+      gap: 2rem;
+
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
   }
 
   // .course-detail__heading
   &__heading {
     @extend %fs-h-2;
-    margin-bottom: 6rem;
-    margin-top: 6rem;
   }
 
   // .course-detail__count
@@ -40,5 +48,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
   }
 }

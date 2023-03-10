@@ -13,6 +13,12 @@
 
     padding: 5.6rem 0;
     border-bottom: 0.1rem solid #E2E9F0;
+
+    @include breakpoint(tablet) {
+      padding: 3rem 0;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
 
   // .personal-block__left

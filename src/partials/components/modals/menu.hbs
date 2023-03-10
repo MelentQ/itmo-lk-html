@@ -1,10 +1,8 @@
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <a class="header__logo" href="./index.html">
-                <img src="img/logo.svg" alt="Logo" height="30" width="400">
-            </a>
-            <div class="header__menu">
+<div class="hystmodal" id="menu" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--menu" role="dialog" aria-modal="true">
+            <button class="hystmodal__close" data-hystclose></button>
+            <div class="modal">
                 <div class="header__top-menu">
                     <ul class="header__menu-list">
                         <li>
@@ -44,11 +42,6 @@
                     </a>
                 </div>
             </div>
-            <button class="header__burger" type="button" data-hystmodal="#menu">
-                <svg width="24" height="24">
-                    <use xlink:href="#burger" />
-                </svg>
-            </button>
         </div>
     </div>
-</header>
+</div>

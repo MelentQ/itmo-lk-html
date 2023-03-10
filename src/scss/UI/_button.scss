@@ -8,12 +8,17 @@
   background-color: #304659;
   border-radius: 0.4rem;
   color: white;
+  text-align: center;
 
   width: fit-content;
 
   @extend %fs-button;
 
   @extend %interactive;
+
+  @include breakpoint(tablet) {
+    width: 100%;
+  }
 
   &:link,
   &:visited {

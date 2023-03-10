@@ -26,4 +26,9 @@
     @extend %fs-h-2;
     margin-bottom: 6rem;
     margin-top: 6rem;
+
+    @include breakpoint(tablet) {
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
 }

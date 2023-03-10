@@ -28,6 +28,14 @@
     gap: 3rem;
 
     margin-bottom: 5.6rem;
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      gap: 2rem;
+
+      margin-bottom: 3rem;
+      align-items: flex-start;
+    }
   }
 
   // .teams__heading
@@ -47,6 +55,10 @@
     border-top: 0.1rem solid #E2E9F0;
     border-bottom: 0.1rem solid #E2E9F0;
 
+    @include breakpoint(tablet) {
+      padding: 2.4rem 0;
+    }
+
     &:first-of-type {
       border-top: none;
     }
@@ -62,6 +74,11 @@
     display: grid;
     grid-template-columns: 3fr 7fr;
     gap: 3rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
   }
 
   // .teams__card-info
@@ -88,6 +105,11 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 3rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
   }
 
   // .teams__card-user-image
@@ -121,6 +143,14 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      row-gap: 4rem;
+
+      margin-bottom: 3rem;
+    }
   }
 
   // .teams__user
@@ -171,6 +201,10 @@
   flex-direction: column;
   gap: 1.6rem;
 
+  @include breakpoint(tablet) {
+    gap: 3rem;
+  }
+
   &--mt {
     margin-top: 2.4rem;
   }
@@ -180,6 +214,12 @@
     display: flex;
     align-items: center;
     gap: 3.2rem;
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.6rem;
+    }
   }
 
   // .team-user-list__item-image
