@@ -7,7 +7,10 @@ import anchorLinks from './anchorLinks';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import HystModal from '../libs/hystmodal/hystmodal.min'
+import customSelects from "./customSelects";
+import fileUpload from "./fileUpload";
+import timer from "./timer";
+import modal from "./modal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,11 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
     masks();
     validation();
     anchorLinks();
-
-    const modal = new HystModal({
-        linkAttributeName: "data-hystmodal"
-    });
-    window.modal = modal;
+    customSelects();
+    fileUpload();
+    modal()
+    timer()
 });
 
 document.addEventListener('lazyloaded', () => {

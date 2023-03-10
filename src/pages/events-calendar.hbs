@@ -1,0 +1,102 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="navigation">
+            <div class="container">
+                <div class="navigation__inner">
+                    <ul class="navigation__left">
+                        <li>
+                            <a class="navigation__link" href="./personal.html">Личные данные</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link navigation__link--active" href="./events.html">Мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./courses.html">Курсы</a>
+                        </li>
+                    </ul>
+                    <ul class="navigation__right">
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#notifications">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#ns"/>
+                                </svg>
+                                <span>Уведомления</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#support">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#sup"/>
+                                </svg>
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub-navigation">
+            <div class="container">
+                <div class="sub-navigation__inner">
+                    <ul class="sub-navigation__list">
+                        <li>
+                            <a class="link" href="./events.html">Мои мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="link" href="./events-archive.html">Архив мероприятий</a>
+                        </li>
+                    </ul>
+                    <ul class="sub-navigation__list">
+                        <li>
+                            <a class="link active" href="./events-calendar.html">Календарь мероприятий центра</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        {{>heading text="Календарь мероприятий центра"}}
+
+        {{>filter}}
+
+        <section class="board">
+            <div class="container">
+                <div class="board__inner">
+                    <div class="board__left">
+                        <ul class="board__tags">
+                            <li class="board__tag">
+                                Олимпиада
+                            </li>
+                        </ul>
+                        <h2 class="board__heading">
+                            Успейте зарегистрироваться на всероссийскую олимпиаду
+                        </h2>
+                    </div>
+                    <div class="board__right js-init-timer" data-date="03/14/23">
+                        <span class="board__timer-label">До окончания регистрации:</span>
+                        <div class="board__timer">
+                            <div class="board__timer-unit">
+                                <span class="js-days">0</span>
+                                <span>дней</span>
+                            </div>
+                            <div class="board__timer-unit">
+                                <span class="js-hours">0</span>
+                                <span>часов</span>
+                            </div>
+                            <div class="board__timer-unit">
+                                <span class="js-minutes">0</span>
+                                <span>минут</span>
+                            </div>
+                        </div>
+                        <button class="button button--white" type="button" data-hystmodal="#event-info">К регистрации</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{>cards}}
+
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,25 @@
+.sub-navigation {
+  // .sub-navigation__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  // .sub-navigation__list
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    .link {
+      opacity: 0.5;
+
+      &.active {
+        pointer-events: none;
+        opacity: 1;
+      }
+    }
+  }
+}

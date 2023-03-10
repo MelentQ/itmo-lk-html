@@ -1,0 +1,69 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="navigation">
+            <div class="container">
+                <div class="navigation__inner">
+                    <ul class="navigation__left">
+                        <li>
+                            <a class="navigation__link" href="./personal.html">Личные данные</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./events.html">Мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link navigation__link--active" href="./courses.html">Курсы</a>
+                        </li>
+                    </ul>
+                    <ul class="navigation__right">
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#notifications">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#ns"/>
+                                </svg>
+                                <span>Уведомления</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#support">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#sup"/>
+                                </svg>
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-detail">
+            <div class="container">
+                <div class="course-detail__inner">
+                    <a class="course-detail__back-link" href="./courses.html">← Назад к списку курсов</a>
+                    <div class="course-detail__heading-block">
+                        <h2 class="course-detail__heading">Название курса/ мастер-класса</h2>
+                        <a class="link" href="#" target="_blank">Связь с куратором в telegram</a>
+                    </div>
+                    <span class="course-detail__count">6 уроков</span>
+                    <ul class="course-detail__list">
+                        <li>
+                            <a class="card card--small" href="./detail.html" title="Перейти на детальную страницу урока">
+                                <div class="card__image">
+                                    <img src="img/placeholder.jpg" alt="Placeholder">
+                                    <ul class="card__tags">
+                                        <li class="card__tag">Пройден</li>
+                                    </ul>
+                                </div>
+                                <span class="card__top-text">Урок 1</span>
+                                <h3 class="card__heading">Название урока</h3>
+                                <span class="card__label">Время изучения 45 минут</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}

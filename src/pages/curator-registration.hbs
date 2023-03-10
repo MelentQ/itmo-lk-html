@@ -1,0 +1,73 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="registration">
+            <div class="container">
+                <div class="registration__heading-block">
+                    <h2 class="registration__heading">Регистрация Куратора</h2>
+                    <div class="registration__heading-link-block">
+                        Уже есть аккаунт? <a class="link" href="#" data-hystmodal="#auth">Войти</a>
+                    </div>
+                </div>
+                <form class="form registration-form js-form" action="#" data-need-validation>
+                    <span class="form__label">*Все поля являются обязательны для заполнения</span>
+                    <div class="form__group">
+                        <h3 class="form__group-heading">Личная информация</h3>
+                        <div class="form__inputs form__inputs--wide">
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="text" placeholder="Фамилия" pattern="[A-Za-zА-Яа-я\-]*"
+                                       required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-я\-]*"
+                                       required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="text" placeholder="Отчество"
+                                       pattern="[A-Za-zА-Яа-я\-]*" required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input js-phone-input" type="tel" placeholder="Телефон"
+                                       data-parsley-phone required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="password" placeholder="Пароль" minlength="12" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form__group">
+                        <h3 class="form__group-heading">Информация об организации</h3>
+                        <div class="form__radios">
+                            <label class="form__radio-wrapper">
+                                <input class="form__radio" name="group" type="radio" checked>
+                                <span class="form__radio-label">Организация</span>
+                            </label>
+                            <label class="form__radio-wrapper">
+                                <input class="form__radio" name="group" type="radio">
+                                <span class="form__radio-label">Независимое общество</span>
+                            </label>
+                        </div>
+                        <div class="form__inputs form__inputs--wide">
+                            <div class="form__input-wrapper js-validation-wrapper form__input-wrapper js-validation-wrapper--wide">
+                                <input class="form__input" type="text" placeholder="Название организации"
+                                       pattern="[ A-Za-zА-Яа-я\-]*" required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper form__input-wrapper js-validation-wrapper--wide">
+                                <input class="form__input" type="text" placeholder="Ваша должность"
+                                       pattern="[ A-Za-zА-Яа-я\-]*" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="button js-form-submit" type="submit">Зарегистрироваться</button>
+                    <span class="form__label">Нажимая кнопку «Зарегистрироваться» вы соглашаетесь с политикой конфиденциальности</span>
+                </form>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}

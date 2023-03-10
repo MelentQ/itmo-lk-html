@@ -1,0 +1,81 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="navigation">
+            <div class="container">
+                <div class="navigation__inner">
+                    <ul class="navigation__left">
+                        <li>
+                            <a class="navigation__link" href="./personal.html">Личные данные</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./events.html">Мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link navigation__link--active" href="./courses.html">Курсы</a>
+                        </li>
+                    </ul>
+                    <ul class="navigation__right">
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#notifications">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#ns"/>
+                                </svg>
+                                <span>Уведомления</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#support">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#sup"/>
+                                </svg>
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub-navigation">
+            <div class="container">
+                <div class="sub-navigation__inner">
+                    <ul class="sub-navigation__list">
+                        <li>
+                            <a class="link active" href="./courses.html">Мои курсы</a>
+                        </li>
+                        <li>
+                            <a class="link" href="./courses-available.html">Доступные</a>
+                        </li>
+                        <li>
+                            <a class="link" href="./courses-planned.html">Планируемые курсы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        {{>heading text="Мои курсы"}}
+
+        <section class="cards">
+            <div class="container">
+                <div class="cards__inner">
+                    <ul class="cards__list">
+                        <li>
+                            <a class="card" href="./course-detail.html" title="Перейти на детальную страницу курса">
+                                <div class="card__image">
+                                    <img src="img/placeholder.jpg" alt="Placeholder">
+                                </div>
+                                <h3 class="card__heading">Название курса/ мастер-класса</h3>
+                                <div class="card__description">Текст — зафиксированная на каком-либо материальном носителе человеческая мысль.</div>
+                                <span class="card__label">Среднее время прохождения — 6 месяцев</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="button button--wide button--white">Загрузить еще</button>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}

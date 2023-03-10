@@ -18,10 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: formData,
                     method: 'POST'
                 })
-                    .then(response => response.json())
-                    .then(data => {
+                    .then(() => {
                         if (window.modal) {
                             window.modal.open('#modal');
+                        }
+
+                        // Personal Avatar Modal Form
+                        if (form.classList.contains('js-avatar-form')) {
+                            setAvatar(form);
                         }
                     })
                     .catch(err => {
@@ -36,6 +40,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
             });
         })
+    }
+
+    function setAvatar(form) {
+        const avatarContainer = document.querySelector('.js-avatar-container');
+        const input = form.querySelector('.ja-avatar-input');
+
+        if (avatarContainer && input) {
+            const imageTag = avatarContainer.querySelector('img');
+            if (imageTag) {
+                imageTag.src = input.value
+            } else {
+                const imageElement = document.createElement('img');
+                imageElement.src = input.value
+                avatarContainer.append(imageElement)
+            }
+
+            input.value = ''
+        }
     }
 
     initForms();

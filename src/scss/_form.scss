@@ -3,10 +3,208 @@
   flex-direction: column;
   gap: 1.2rem;
 
+  max-width: 70rem;
+
+  &--wide {
+    max-width: 100%;
+  }
+
+  &__group {
+    margin-bottom: 5.6rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .form__group-heading {
+        @extend %fs-body-m;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+      }
+    }
+  }
+
+  &__group-heading {
+    @extend %fs-body-l;
+    font-weight: 700;
+
+    margin-bottom: 3.2rem;
+  }
+
+  &__radios {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    row-gap: 1rem;
+
+    margin-bottom: 3.2rem;
+
+    @extend %fs-body-s;
+  }
+
+  &__radio-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    cursor: pointer;
+  }
+
+  &__radio {
+    appearance: none;
+
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+
+    border: 0.2rem solid #E2E9F0;
+    transition: 0.3s all linear;
+
+    &:checked {
+      border: 0.6rem solid #E2E9F0;
+    }
+  }
+
+  &__radio-label {
+
+  }
+
+  &__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    cursor: pointer;
+
+    @extend %fs-body-s;
+  }
+
+  &__checkbox {
+    appearance: none;
+
+    width: 1.6rem;
+    height: 1.6rem;
+
+    border: 0.2rem solid #E2E9F0;
+    transition: 0.3s all linear;
+
+    &:checked {
+      border: 0.6rem solid #E2E9F0;
+    }
+  }
+
+  &__checkbox-label {
+
+  }
+
+  &__wide-inputs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+
+    margin-bottom: 3rem;
+  }
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+
+    &--wide {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__input-wrapper {
+    &--wide {
+      grid-column: span 2;
+    }
+
+    &.error .form__input,
+    &.error .choices__inner {
+      background-color: #ffbdbd;
+    }
+  }
+
   // .form__input
   &__input {
     padding: 1.6rem;
     background-color: #E1E9F0;
     color: #8298AB;
+
+    border: none;
+    appearance: none;
+    width: 100%;
+
+    @extend %fs-body-s;
   }
+
+  &__bottom {
+    margin-top: 3.2rem;
+  }
+
+  &__label {
+    opacity: 0.4;
+    max-width: 32rem;
+
+    @extend %fs-body-xs;
+  }
+
+  &__label-bold {
+    @extend %fs-body-s;
+    font-weight: 700;
+  }
+
+  &__file-wrapper {
+    grid-column: span 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding: 1.6rem 2rem;
+    border: 0.1rem dashed #304659;
+
+    cursor: pointer;
+    @extend %interactive;
+
+    input {
+      @include visuallyHidden;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.5;
+      user-select: none;
+    }
+
+    .parsley-errors-list {
+      display: none;
+    }
+
+    &.error {
+     border-color: #ffbdbd;
+    }
+  }
+
+  &__file-label {
+
+  }
+
+  &__file-limit {
+    flex-shrink: 0;
+  }
+
+  &__link {
+    width: fit-content;
+  }
+
+
 }

@@ -5,7 +5,9 @@
   "main": "main.js",
   "scripts": {
     "build": "gulp build-production",
-    "dev": "gulp build && gulp serve"
+    "dev": "gulp build && gulp serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "MelentQ",
@@ -41,6 +43,7 @@
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cached": "^1.1.1",

@@ -30,4 +30,10 @@
   &--wide {
     width: 100%;
   }
+
+  &--white {
+    background-color: white;
+    border: 0.1rem solid #304659;
+    color: #304659;
+  }
 }

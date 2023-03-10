@@ -1,0 +1,89 @@
+.personal-block {
+
+  &:last-of-type {
+    .personal-block__inner {
+      border-bottom: none;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    gap: 3rem;
+
+    padding: 5.6rem 0;
+    border-bottom: 0.1rem solid #E2E9F0;
+  }
+
+  // .personal-block__left
+  &__left {
+  }
+
+  &__avatar-wrapper {
+    max-width: 20rem;
+  }
+
+  &__avatar {
+    position: relative;
+
+    margin-top: 3.2rem;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+
+    cursor: pointer;
+    @extend %interactive;
+
+    border: 0.1rem dashed #304659;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__avatar-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.6rem;
+
+    @extend %fs-body-s;
+
+    svg {
+      width: 8.4rem;
+      height: 8.4rem;
+    }
+  }
+
+  // .personal-block__heading
+  &__heading {
+    @extend %fs-body-m;
+    font-weight: 700;
+  }
+
+  // .personal-block__description
+  &__description {
+    @extend %fs-body-xs;
+    opacity: 0.5;
+    max-width: 16.5rem;
+    margin-top: 1.6rem;
+  }
+
+  // .personal-block__right
+  &__right {
+  }
+}

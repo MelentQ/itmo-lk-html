@@ -1,0 +1,16 @@
+.cards {
+  margin-bottom: 5.5rem;
+
+  // .cards__inner
+  &__inner {
+  }
+
+  // .cards__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    row-gap: 6rem;
+    margin-bottom: 5rem;
+  }
+}

@@ -1,0 +1,39 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="registration">
+            <div class="container">
+                <div class="registration__heading-block">
+                    <h2 class="registration__heading">Регистрация ученика</h2>
+                    <div class="registration__heading-link-block">
+                        Уже есть аккаунт? <a class="link" href="#" data-hystmodal="#auth">Войти</a>
+                    </div>
+                </div>
+                <form class="form registration-form js-form" action="#" data-need-validation>
+                    <span class="form__label">*Все поля являются обязательны для заполнения</span>
+                    <div class="form__inputs">
+                        <div class="form__input-wrapper js-validation-wrapper">
+                            <input class="form__input" type="text" placeholder="Имя" pattern="[ A-Za-zА-Яа-я\-]*"
+                                   required>
+                        </div>
+                        <div class="form__input-wrapper js-validation-wrapper">
+                            <input class="form__input" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form__input-wrapper js-validation-wrapper">
+                            <input class="form__input js-phone-input" type="tel" placeholder="Телефон"
+                                   data-parsley-phone required>
+                        </div>
+                        <div class="form__input-wrapper js-validation-wrapper">
+                            <input class="form__input" type="password" placeholder="Пароль" minlength="12" required>
+                        </div>
+                    </div>
+                    <div class="form__bottom">
+                        <button class="button js-form-submit" type="submit">Зарегистрироваться</button>
+                    </div>
+                    <span class="form__label">Нажимая кнопку «Зарегистрироваться» вы соглашаетесь с политикой конфиденциальности</span>
+                </form>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}

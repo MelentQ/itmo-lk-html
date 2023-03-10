@@ -11,8 +11,19 @@
 @import 'modal';
 @import 'form';
 @import 'socials';
+@import 'card';
 
 @import 'UI/link';
 @import 'UI/button';
+@import 'UI/checkbox';
 
-@import "sections/registration";
+@import 'sections/registration';
+@import 'sections/navigation';
+@import 'sections/personal-block';
+@import 'sections/sub-navigation';
+@import 'sections/cards';
+@import 'sections/filter';
+@import 'sections/board';
+@import 'sections/course-detail';
+@import 'sections/detail';
+@import 'sections/teams';

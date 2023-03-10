@@ -1,0 +1,86 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="navigation">
+            <div class="container">
+                <div class="navigation__inner">
+                    <ul class="navigation__left">
+                        <li>
+                            <a class="navigation__link" href="./personal.html">Личные данные</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./events.html">Мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./courses.html">Курсы</a>
+                        </li>
+                    </ul>
+                    <ul class="navigation__right">
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#notifications">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#ns"/>
+                                </svg>
+                                <span>Уведомления</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#support">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#sup"/>
+                                </svg>
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="teams">
+            <div class="container">
+                <div class="teams__inner">
+                    <a class="teams__back-link" href="./teams.html">← Назад к списку команд</a>
+                    <div class="teams__heading-block">
+                        <h2 class="teams__heading">Название команды</h2>
+                        <button class="button button--white" type="button" data-hystmodal="#delete">Удалить команду</button>
+                    </div>
+
+                    <span class="teams__label">В команде 3 участника (максимальное количество 8)</span>
+                    <ul class="teams__users">
+                        <li class="teams__user">
+                            <div class="teams__user-image">
+                                <img src="img/placeholder.jpg" alt="User">
+                            </div>
+                            <h3 class="teams__user-name">Фамилия Имя Отчество</h3>
+                            <div class="teams__user-text">16 лет</div>
+                            <a class="teams__user-link link" href="#" data-hystmodal="#delete">Удалить</a>
+                        </li>
+                        <li class="teams__user">
+                            <div class="teams__user-image">
+                                <img src="img/placeholder.jpg" alt="User">
+                            </div>
+                            <h3 class="teams__user-name">Фамилия Имя Отчество</h3>
+                            <div class="teams__user-text">16 лет</div>
+                            <a class="teams__user-link link" href="#" data-hystmodal="#delete">Удалить</a>
+                        </li>
+                        <li class="teams__user">
+                            <div class="teams__user-image">
+                                <img src="img/placeholder.jpg" alt="User">
+                            </div>
+                            <h3 class="teams__user-name">Фамилия Имя Отчество</h3>
+                            <div class="teams__user-text">16 лет</div>
+                            <a class="teams__user-link link" href="#" data-hystmodal="#delete">Удалить</a>
+                        </li>
+                    </ul>
+
+                    <div class="teams__buttons">
+                        <button class="button" type="button" data-hystmodal="#team-add">Добавить из списка зарегистрированных</button>
+                        <button class="button button--white" type="button" data-hystmodal="#team-add-new">Добавить нового участника</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}

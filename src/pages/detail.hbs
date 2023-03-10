@@ -1,0 +1,74 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="navigation">
+            <div class="container">
+                <div class="navigation__inner">
+                    <ul class="navigation__left">
+                        <li>
+                            <a class="navigation__link" href="./personal.html">Личные данные</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./events.html">Мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link navigation__link--active" href="./courses.html">Курсы</a>
+                        </li>
+                    </ul>
+                    <ul class="navigation__right">
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#notifications">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#ns"/>
+                                </svg>
+                                <span>Уведомления</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#support">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#sup"/>
+                                </svg>
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-detail">
+            <div class="container">
+                <div class="course-detail__inner">
+                    <a class="course-detail__back-link" href="./course-detail.html">← Назад к списку уроков</a>
+                    <div class="course-detail__heading-block">
+                        <h2 class="course-detail__heading">Название урока</h2>
+                        <a class="link" href="#" target="_blank">Связь с куратором в telegram</a>
+                    </div>
+                    <span class="course-detail__count">Урок 4</span>
+                    <div class="detail">
+                        <img class="detail__image" src="img/placeholder.jpg" alt="Detail Image">
+                        <div class="detail__text-block">
+                            <h3 class="detail__title">Ссылка на урок</h3>
+                            <a class="link" href="#" target="_blank">URL ссылка на ZOOM если онлайн и на YouTube если это запись</a>
+                        </div>
+                        <div class="detail__text-block">
+                            <h3 class="detail__title">Домашнее задание</h3>
+                            <div class="detail__text">Отправьте ссылку на выполненное домашнее задание</div>
+                            <form class="form js-form" action="#" data-need-validation>
+                                <div class="form__inputs form__inputs--wide">
+                                    <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
+                                        <input class="form__input" type="url" placeholder="URL ссылка" required>
+                                    </div>
+                                </div>
+
+                                <button class="button js-form-submit" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}

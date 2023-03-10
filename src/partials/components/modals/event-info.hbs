@@ -1,0 +1,82 @@
+<div class="hystmodal" id="event-info" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--wide" role="dialog" aria-modal="true">
+            <div class="modal">
+                <div class="modal__heading-block">
+                    <h3 class="modal__heading">Пожалуйста дополните информацию профиля</h3>
+                </div>
+                <div class="modal__description">
+                    <p>Для участия в этом мероприятии вам необходимо дополнить следующую информацию</p>
+                </div>
+                <form class="form js-form" action="#" data-need-validation>
+                    <div class="form__group form__group--flex">
+                        <h3 class="form__group-heading">Личная информация</h3>
+                        <div class="form__inputs form__inputs--wide">
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="text" placeholder="Фамилия" pattern="[A-Za-zА-Яа-я\-]*"
+                                       required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="text" placeholder="Отчество"
+                                       pattern="[A-Za-zА-Яа-я\-]*" required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="date" min="1970-01-01" max="2010-12-31"
+                                       value="2000-01-01" required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <input class="form__input" type="text" placeholder="Город"
+                                       pattern="[A-Za-zА-Яа-я\-]*" required>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <select class="form__input js-custom-select" required>
+                                    <option value="">Гражданство</option>
+                                    <option value="1">Гражданство 1</option>
+                                    <option value="2">Гражданство 2</option>
+                                    <option value="3">Гражданство 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__group form__group--flex">
+                        <h3 class="form__group-heading">Документы</h3>
+                        <p class="form__label-bold">Документ удостоверяющий личность (обязательно)</p>
+                        <div class="form__inputs form__inputs--wide">
+                            <label class="form__file-wrapper js-validation-wrapper js-file-upload js-toggle-14-target">
+                                <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf" required>
+                                <span class="form__file-label js-file-upload-text"
+                                      data-default="Ксерокопия паспорта (jpg, pdf)">Ксерокопия паспорта (jpg, pdf)</span>
+                                <span class="form__file-limit">до 5 мб</span>
+                            </label>
+                        </div>
+
+                        <label class="form__checkbox-wrapper">
+                            <input class="form__checkbox js-toggle-14" type="checkbox">
+                            <span class="form__checkbox-label">Еще нет паспорта (до 14 лет)</span>
+                        </label>
+
+                        <div class="form__inputs form__inputs--wide">
+                            <label class="form__file-wrapper js-validation-wrapper js-file-upload js-toggle-14-not-target disabled">
+                                <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf">
+                                <span class="form__file-label js-file-upload-text"
+                                      data-default="Ксерокопия свидетельства о рождении (jpg, pdf)">Ксерокопия свидетельства о рождении (jpg, pdf)</span>
+                                <span class="form__file-limit">до 5 мб</span>
+                            </label>
+                            <label class="form__file-wrapper js-validation-wrapper js-file-upload js-toggle-14-not-target disabled">
+                                <input type="file" data-mb-limit="5" accept=".jpg,.jpeg,.pdf">
+                                <span class="form__file-label js-file-upload-text"
+                                      data-default="Согласие законного представителя в мероприятиях центра (jpg, pdf)">Согласие законного представителя в мероприятиях центра (jpg, pdf)</span>
+                                <span class="form__file-limit">до 5 мб</span>
+                            </label>
+                            <a class="link form__link toggle-if-14" style="display: none;" href="#" download>Шаблон
+                                согласия</a>
+                        </div>
+                    </div>
+
+                    <button class="button button--wide js-form-submit" type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

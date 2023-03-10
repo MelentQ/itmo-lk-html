@@ -1,5 +1,5 @@
 @import '../../node_modules/swiper/swiper-bundle';
-// @import '../../node_modules/choices.js/public/assets/styles/choices';
+@import '../../node_modules/choices.js/public/assets/styles/choices';
 // @import '../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone';
 // @import '../../node_modules/plyr/dist/plyr';
 // @import '../../node_modules/@fancyapps/ui/dist/fancybox';
@@ -28,4 +28,32 @@
 
 .hystmodal__window {
     width: 35.5rem;
+
+    &--wide {
+        width: 68rem;
+    }
+}
+
+.parsley-errors-list {
+    @extend %fs-body-xs;
+    opacity: 0.5;
+    margin-top: 0.2rem;
+}
+
+.choices {
+    .parsley-errors-list {
+        display: none;
+    }
+}
+
+.choices__inner {
+    height: 100%;
+    padding: 1.6rem !important;
+    background-color: #E1E9F0;
+    color: #8298AB;
+    border: 0 !important;
+}
+
+.choices__list--single {
+    padding: 0;
 }

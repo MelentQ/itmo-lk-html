@@ -10,6 +10,9 @@
 
   // .header__logo
   &__logo {
+    @extend %interactive;
+    width: 40rem;
+    height: 3rem;
   }
 
   // .header__menu

@@ -1,0 +1,82 @@
+.board {
+  margin-bottom: 3rem;
+
+  // .board__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+
+    padding: 5rem 12rem;
+    background-color: #304659;
+    color: white;
+  }
+
+  // .board__left
+  &__left {
+  }
+
+  // .board__tags
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    margin-bottom: 3rem;
+
+    @extend %fs-body-m;
+  }
+
+  // .board__tag
+  &__tag {
+    padding: 0.8rem 1rem;
+    background-color: white;
+    color: #304659;
+  }
+
+  // .board__heading
+  &__heading {
+    @extend %fs-h-4;
+    max-width: 52rem;
+  }
+
+  // .board__right
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+
+  // .board__timer-label
+  &__timer-label {
+    @extend %fs-body-s;
+  }
+
+  // .board__timer
+  &__timer {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  // .board__timer-unit
+  &__timer-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    @extend %fs-body-s;
+
+    span:nth-child(1) {
+      font-size: 4.5rem;
+      font-weight: 200;
+    }
+  }
+}
+
+.js-init-timer {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

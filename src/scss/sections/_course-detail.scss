@@ -1,0 +1,44 @@
+.course-detail {
+  margin-bottom: 6rem;
+
+  // .course-detail__inner
+  &__inner {
+  }
+
+  // .course-detail__back-link
+  &__back-link {
+    @extend %interactive;
+    @extend %fs-body-m;
+    margin-bottom: 6rem;
+  }
+
+  // .course-detail__heading-block
+  &__heading-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  // .course-detail__heading
+  &__heading {
+    @extend %fs-h-2;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+  }
+
+  // .course-detail__count
+  &__count {
+    @extend %fs-body-m;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 4rem;
+  }
+
+  // .course-detail__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}

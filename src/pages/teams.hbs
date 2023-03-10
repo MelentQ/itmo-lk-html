@@ -1,0 +1,73 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="navigation">
+            <div class="container">
+                <div class="navigation__inner">
+                    <ul class="navigation__left">
+                        <li>
+                            <a class="navigation__link" href="./personal.html">Личные данные</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./events.html">Мероприятия</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="./courses.html">Курсы</a>
+                        </li>
+                    </ul>
+                    <ul class="navigation__right">
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#notifications">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#ns"/>
+                                </svg>
+                                <span>Уведомления</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation__icon-link" href="#" data-hystmodal="#support">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#sup"/>
+                                </svg>
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="teams">
+            <div class="container">
+                <div class="teams__inner">
+                    <div class="teams__heading-block">
+                        <h2 class="teams__heading">Команды</h2>
+                        <button class="button" type="button" data-hystmodal="#team">Создать команду</button>
+                    </div>
+                    <ul class="teams__list">
+                        <li class="teams__item">
+                            <a class="teams__card" href="./teams-detail.html" title="Перейти на страницу команды">
+                                <div class="teams__card-info">
+                                    <h3 class="teams__card-title">Название команды</h3>
+                                    <span class="teams__card-label">6 участников</span>
+                                </div>
+                                <ul class="teams__card-users">
+                                    <li class="teams__card-user-image">
+                                        <img src="img/placeholder.jpg" alt="User">
+                                    </li>
+                                    <li class="teams__card-user-image">
+                                        <img src="img/placeholder.jpg" alt="User">
+                                    </li>
+                                    <li class="teams__card-user-image">
+                                        <img src="img/placeholder.jpg" alt="User">
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}

@@ -9,6 +9,11 @@ export default function fileUpload() {
         input.addEventListener('change', () => {
             if (input.files.length) {
                 label.textContent = input.files[0].name;
+
+                if(input.files[0].size > input.dataset.mbLimit * 1024 * 1024){
+                    alert(`Размер файла до ${input.dataset.mbLimit} мб`);
+                    this.value = "";
+                }
             }
         });
 
@@ -34,4 +39,36 @@ export default function fileUpload() {
             });
         }
     });
+
+    const toggle14 = document.querySelector('.js-toggle-14');
+    const toggle14target = document.querySelector('.js-toggle-14-target');
+    const toggle14notTargets = document.querySelectorAll('.js-toggle-14-not-target');
+    if (toggle14 && toggle14target && toggle14notTargets.length) {
+        const targetInput = toggle14target.querySelector('input');
+        const targetInputLabel = toggle14target.querySelector('.js-file-upload-text')
+        const toggleIf14 = document.querySelectorAll('.toggle-if-14');
+
+        toggle14.addEventListener('change', () => {
+            toggle14target.classList.remove('error');
+            toggle14target.classList.toggle('disabled', toggle14.checked)
+            targetInput.toggleAttribute('required', !toggle14.checked)
+            targetInput.value = ''
+            targetInputLabel.textContent = targetInputLabel.dataset.default
+
+            toggle14notTargets.forEach(wrapper => {
+                const notTargetInput = wrapper.querySelector('input');
+                const notTargetInputLabel = wrapper.querySelector('.js-file-upload-text')
+
+                wrapper.classList.remove('error')
+                wrapper.classList.toggle('disabled', !toggle14.checked)
+                notTargetInput.toggleAttribute('required', toggle14.checked)
+                notTargetInput.value = ''
+                notTargetInputLabel.textContent = notTargetInputLabel.dataset.default
+            })
+
+            toggleIf14.forEach(element => {
+                element.style.display = toggle14.checked ? "block" : "none";
+            })
+        })
+    }
 }

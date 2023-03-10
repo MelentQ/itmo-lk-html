@@ -1,0 +1,38 @@
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.checkbox {
+
+}
+
+.checkbox__label {
+  padding: 0.4rem 0.7rem;
+  background-color: #e1e9f0;
+  color: #304659;
+
+  @extend %fs-body-s;
+
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  cursor: pointer;
+}
+
+.checkbox__label span {
+  display: none;
+}
+
+.checkbox__label:hover {
+  background-color: #89a8bd;
+}
+
+.checkbox input:checked ~ .checkbox__label {
+  background-color: #304659;
+  color: white;
+}
+
+.checkbox input:checked ~ .checkbox__label span {
+  display: inline;
+}
