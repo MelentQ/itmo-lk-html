@@ -76,7 +76,7 @@
                             <a class="navigation__link" href="./personal.html">Личные данные</a>
                         </li>
                         <li>
-                            <a class="navigation__link navigation__link--active" href="./events.html">Мероприятия</a>
+                            <a class="navigation__link" href="./events.html">Мероприятия</a>
                         </li>
                         <li>
                             <a class="navigation__link" href="./courses.html">Курсы</a>
@@ -104,109 +104,51 @@
             </div>
         </section>
 
-        <section class="sub-navigation">
+        <section class="teams">
             <div class="container">
-                <div class="sub-navigation__inner">
-                    <ul class="sub-navigation__list">
-                        <li>
-                            <a class="link active" href="./events.html">Мои мероприятия</a>
+                <div class="teams__inner">
+                    <a class="teams__back-link" href="./teams.html">← Назад к списку команд</a>
+                    <div class="teams__heading-block">
+                        <h2 class="teams__heading">Название команды</h2>
+                        <button class="button button--white" type="button" data-hystmodal="#delete">Удалить команду</button>
+                    </div>
+
+                    <span class="teams__label">В команде 3 участника (максимальное количество 8)</span>
+                    <ul class="teams__users">
+                        <li class="teams__user">
+                            <div class="teams__user-image">
+                                <img src="img/placeholder.jpg" alt="User">
+                            </div>
+                            <h3 class="teams__user-name">Фамилия Имя Отчество</h3>
+                            <div class="teams__user-text">16 лет</div>
+                            <a class="teams__user-link link" href="#" data-hystmodal="#delete">Удалить</a>
                         </li>
-                        <li>
-                            <a class="link" href="./events-archive.html">Архив мероприятий</a>
+                        <li class="teams__user">
+                            <div class="teams__user-image">
+                                <img src="img/placeholder.jpg" alt="User">
+                            </div>
+                            <h3 class="teams__user-name">Фамилия Имя Отчество</h3>
+                            <div class="teams__user-text">16 лет</div>
+                            <a class="teams__user-link link" href="#" data-hystmodal="#delete">Удалить</a>
+                        </li>
+                        <li class="teams__user">
+                            <div class="teams__user-image">
+                                <img src="img/placeholder.jpg" alt="User">
+                            </div>
+                            <h3 class="teams__user-name">Фамилия Имя Отчество</h3>
+                            <div class="teams__user-text">16 лет</div>
+                            <a class="teams__user-link link" href="#" data-hystmodal="#delete">Удалить</a>
                         </li>
                     </ul>
-                    <ul class="sub-navigation__list">
-                        <li>
-                            <a class="link" href="./events-calendar.html">Календарь мероприятий центра</a>
-                        </li>
-                    </ul>
+
+                    <div class="teams__buttons">
+                        <button class="button" type="button" data-hystmodal="#team-add">Добавить из списка зарегистрированных</button>
+                        <button class="button button--white" type="button" data-hystmodal="#team-add-new">Добавить нового участника</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <h2 class="heading">Мои мероприятия</h2>
-            </div>
-        </section>
-        <section class="cards">
-            <div class="container">
-                <div class="cards__inner">
-                    <ul class="cards__list">
-                        <li>
-                            <div class="card" data-hystmodal="#event-info">
-                                <div class="card__image">
-                                    <img src="img/placeholder.jpg" alt="Placeholder">
-                                    <ul class="card__tags">
-                                        <li class="card__tag">Соревнование</li>
-                                        <li class="card__tag">Соревнование 2</li>
-                                    </ul>
-                                    <ul class="card__statuses">
-                                        <li class="card__status">
-                                            <svg width="24" height="24">
-                                                <use xlink:href="#warn" />
-                                            </svg>
-                                            <span>Вы не прошли в следющий этап</span>
-                                        </li>
-                                        <li class="card__status">
-                                            <svg width="24" height="24">
-                                                <use xlink:href="#up" />
-                                            </svg>
-                                            <span>Вы прошли в следующий этап</span>
-                                        </li>
-                                        <li class="card__status">
-                                            <span>Идет регистрация</span>
-                                        </li>
-                                        <li class="card__status">
-                                            <svg width="24" height="24">
-                                                <use xlink:href="#cup" />
-                                            </svg>
-                                            <span>Ваша команда заняла 23 место</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="card__heading">Название мероприятия</h3>
-                                <ul class="card__list">
-                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
-                                    <li class="card__list-item">Очно - заочно</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card" data-hystmodal="#event">
-                                <div class="card__image">
-                                    <img src="img/placeholder.jpg" alt="Placeholder">
-                                    <ul class="card__tags">
-                                        <li class="card__tag">Соревнование</li>
-                                    </ul>
-                                </div>
-                                <h3 class="card__heading">Название мероприятия</h3>
-                                <ul class="card__list">
-                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
-                                    <li class="card__list-item">Очно - заочно</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card" data-hystmodal="#team-select">
-                                <div class="card__image">
-                                    <img src="img/placeholder.jpg" alt="Placeholder">
-                                    <ul class="card__tags">
-                                        <li class="card__tag">Соревнование</li>
-                                    </ul>
-                                </div>
-                                <h3 class="card__heading">Название мероприятия</h3>
-                                <ul class="card__list">
-                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
-                                    <li class="card__list-item">Очно - заочно</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="button button--wide button--white">Загрузить еще</button>
-                </div>
-            </div>
-        </section>
     </main>
     <footer class="footer">
         <div class="container">

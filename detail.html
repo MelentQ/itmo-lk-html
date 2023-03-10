@@ -76,10 +76,10 @@
                             <a class="navigation__link" href="./personal.html">Личные данные</a>
                         </li>
                         <li>
-                            <a class="navigation__link navigation__link--active" href="./events.html">Мероприятия</a>
+                            <a class="navigation__link" href="./events.html">Мероприятия</a>
                         </li>
                         <li>
-                            <a class="navigation__link" href="./courses.html">Курсы</a>
+                            <a class="navigation__link navigation__link--active" href="./courses.html">Курсы</a>
                         </li>
                     </ul>
                     <ul class="navigation__right">
@@ -104,109 +104,39 @@
             </div>
         </section>
 
-        <section class="sub-navigation">
+        <section class="course-detail">
             <div class="container">
-                <div class="sub-navigation__inner">
-                    <ul class="sub-navigation__list">
-                        <li>
-                            <a class="link active" href="./events.html">Мои мероприятия</a>
-                        </li>
-                        <li>
-                            <a class="link" href="./events-archive.html">Архив мероприятий</a>
-                        </li>
-                    </ul>
-                    <ul class="sub-navigation__list">
-                        <li>
-                            <a class="link" href="./events-calendar.html">Календарь мероприятий центра</a>
-                        </li>
-                    </ul>
+                <div class="course-detail__inner">
+                    <a class="course-detail__back-link" href="./course-detail.html">← Назад к списку уроков</a>
+                    <div class="course-detail__heading-block">
+                        <h2 class="course-detail__heading">Название урока</h2>
+                        <a class="link" href="#" target="_blank">Связь с куратором в telegram</a>
+                    </div>
+                    <span class="course-detail__count">Урок 4</span>
+                    <div class="detail">
+                        <img class="detail__image" src="img/placeholder.jpg" alt="Detail Image">
+                        <div class="detail__text-block">
+                            <h3 class="detail__title">Ссылка на урок</h3>
+                            <a class="link" href="#" target="_blank">URL ссылка на ZOOM если онлайн и на YouTube если это запись</a>
+                        </div>
+                        <div class="detail__text-block">
+                            <h3 class="detail__title">Домашнее задание</h3>
+                            <div class="detail__text">Отправьте ссылку на выполненное домашнее задание</div>
+                            <form class="form js-form" action="#" data-need-validation>
+                                <div class="form__inputs form__inputs--wide">
+                                    <div class="form__input-wrapper js-validation-wrapper form__input-wrapper--wide">
+                                        <input class="form__input" type="url" placeholder="URL ссылка" required>
+                                    </div>
+                                </div>
+
+                                <button class="button js-form-submit" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <h2 class="heading">Мои мероприятия</h2>
-            </div>
-        </section>
-        <section class="cards">
-            <div class="container">
-                <div class="cards__inner">
-                    <ul class="cards__list">
-                        <li>
-                            <div class="card" data-hystmodal="#event-info">
-                                <div class="card__image">
-                                    <img src="img/placeholder.jpg" alt="Placeholder">
-                                    <ul class="card__tags">
-                                        <li class="card__tag">Соревнование</li>
-                                        <li class="card__tag">Соревнование 2</li>
-                                    </ul>
-                                    <ul class="card__statuses">
-                                        <li class="card__status">
-                                            <svg width="24" height="24">
-                                                <use xlink:href="#warn" />
-                                            </svg>
-                                            <span>Вы не прошли в следющий этап</span>
-                                        </li>
-                                        <li class="card__status">
-                                            <svg width="24" height="24">
-                                                <use xlink:href="#up" />
-                                            </svg>
-                                            <span>Вы прошли в следующий этап</span>
-                                        </li>
-                                        <li class="card__status">
-                                            <span>Идет регистрация</span>
-                                        </li>
-                                        <li class="card__status">
-                                            <svg width="24" height="24">
-                                                <use xlink:href="#cup" />
-                                            </svg>
-                                            <span>Ваша команда заняла 23 место</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="card__heading">Название мероприятия</h3>
-                                <ul class="card__list">
-                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
-                                    <li class="card__list-item">Очно - заочно</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card" data-hystmodal="#event">
-                                <div class="card__image">
-                                    <img src="img/placeholder.jpg" alt="Placeholder">
-                                    <ul class="card__tags">
-                                        <li class="card__tag">Соревнование</li>
-                                    </ul>
-                                </div>
-                                <h3 class="card__heading">Название мероприятия</h3>
-                                <ul class="card__list">
-                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
-                                    <li class="card__list-item">Очно - заочно</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card" data-hystmodal="#team-select">
-                                <div class="card__image">
-                                    <img src="img/placeholder.jpg" alt="Placeholder">
-                                    <ul class="card__tags">
-                                        <li class="card__tag">Соревнование</li>
-                                    </ul>
-                                </div>
-                                <h3 class="card__heading">Название мероприятия</h3>
-                                <ul class="card__list">
-                                    <li class="card__list-item">24 мая 2022 - 07 июля 2022</li>
-                                    <li class="card__list-item">Очно - заочно</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="button button--wide button--white">Загрузить еще</button>
-                </div>
-            </div>
-        </section>
     </main>
     <footer class="footer">
         <div class="container">

@@ -109,7 +109,7 @@
                 <div class="sub-navigation__inner">
                     <ul class="sub-navigation__list">
                         <li>
-                            <a class="link active" href="./events.html">Мои мероприятия</a>
+                            <a class="link" href="./events.html">Мои мероприятия</a>
                         </li>
                         <li>
                             <a class="link" href="./events-archive.html">Архив мероприятий</a>
@@ -117,7 +117,7 @@
                     </ul>
                     <ul class="sub-navigation__list">
                         <li>
-                            <a class="link" href="./events-calendar.html">Календарь мероприятий центра</a>
+                            <a class="link active" href="./events-calendar.html">Календарь мероприятий центра</a>
                         </li>
                     </ul>
                 </div>
@@ -126,9 +126,104 @@
 
         <section>
             <div class="container">
-                <h2 class="heading">Мои мероприятия</h2>
+                <h2 class="heading">Календарь мероприятий центра</h2>
             </div>
         </section>
+        <section class="filter">
+            <div class="container">
+                <div class="filter__inner">
+                    <form class="form form--wide" action="#">
+                        <div class="form__wide-inputs">
+                            <div class="form__input-wrapper form__input-wrapper--wide js-validation-wrapper">
+                                <input class="form__input" type="text" placeholder="Поиск по названию">
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <select class="form__input js-custom-select">
+                                    <option value="">Дата мероприятия</option>
+                                    <option value="1">Дата мероприятия 1</option>
+                                    <option value="2">Дата мероприятия 2</option>
+                                    <option value="3">Дата мероприятия 3</option>
+                                </select>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <select class="form__input js-custom-select">
+                                    <option value="">Категория участников</option>
+                                    <option value="1">Категория участников 1</option>
+                                    <option value="2">Категория участников 2</option>
+                                    <option value="3">Категория участников 3</option>
+                                </select>
+                            </div>
+                            <div class="form__input-wrapper js-validation-wrapper">
+                                <select class="form__input js-custom-select">
+                                    <option value="">Формат участия</option>
+                                    <option value="1">Формат участия 1</option>
+                                    <option value="2">Формат участия 2</option>
+                                    <option value="3">Формат участия 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="checkboxes">
+                            <li class="checkbox">
+                                <input class="visually-hidden" type="checkbox" id="checkbox-1" checked>
+                                <label class="checkbox__label" for="checkbox-1">
+                                    Соревнование
+                                    <span>×</span>
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <input class="visually-hidden" type="checkbox" id="checkbox-2" checked>
+                                <label class="checkbox__label" for="checkbox-2">
+                                    Олимпиада
+                                    <span>×</span>
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <input class="visually-hidden" type="checkbox" id="checkbox-3">
+                                <label class="checkbox__label" for="checkbox-3">
+                                    Хакатон
+                                    <span>×</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="board">
+            <div class="container">
+                <div class="board__inner">
+                    <div class="board__left">
+                        <ul class="board__tags">
+                            <li class="board__tag">
+                                Олимпиада
+                            </li>
+                        </ul>
+                        <h2 class="board__heading">
+                            Успейте зарегистрироваться на всероссийскую олимпиаду
+                        </h2>
+                    </div>
+                    <div class="board__right js-init-timer" data-date="03/14/23">
+                        <span class="board__timer-label">До окончания регистрации:</span>
+                        <div class="board__timer">
+                            <div class="board__timer-unit">
+                                <span class="js-days">0</span>
+                                <span>дней</span>
+                            </div>
+                            <div class="board__timer-unit">
+                                <span class="js-hours">0</span>
+                                <span>часов</span>
+                            </div>
+                            <div class="board__timer-unit">
+                                <span class="js-minutes">0</span>
+                                <span>минут</span>
+                            </div>
+                        </div>
+                        <button class="button button--white" type="button" data-hystmodal="#event-info">К регистрации</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="cards">
             <div class="container">
                 <div class="cards__inner">
