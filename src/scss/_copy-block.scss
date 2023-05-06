@@ -1,0 +1,27 @@
+.copy-block {
+  width: 100%;
+  margin-top: 2.4rem;
+
+  &__label {
+    margin-bottom: 0.4rem;
+
+    @extend %fs-body-xs;
+
+    opacity: 0.4;
+  }
+
+  &__text {
+    padding: 1.6rem;
+    margin-bottom: 2.4rem;
+
+    background-color: #F5F9FC;
+
+    @extend %fs-body-s;
+  }
+
+  &__button {
+    &.button {
+      width: 100%;
+    }
+  }
+}

@@ -44,25 +44,85 @@
                         <h2 class="teams__heading">Команды</h2>
                         <button class="button" type="button" data-hystmodal="#team">Создать команду</button>
                     </div>
+                    <div class="teams__empty">
+                        <p>Сейчас у вас нет команды</p>
+                        <p>Хотите создать?</p>
+                        <button class="teams__empty-button button" type="button" data-hystmodal="#team">Создать команду</button>
+                    </div>
                     <ul class="teams__list">
                         <li class="teams__item">
-                            <a class="teams__card" href="./teams-detail.html" title="Перейти на страницу команды">
+                            <div class="teams__card">
                                 <div class="teams__card-info">
-                                    <h3 class="teams__card-title">Название команды</h3>
+                                    <a class="teams__card-link" href="./teams-detail.html" title="Перейти на страницу команды"><h3 class="teams__card-title">Название команды</h3></a>
+                                </div>
+                                <div class="teams__card-empty">
+                                    <div class="teams__card-empty-text">Список участников пуст, хотите добавить?</div>
+                                    <button class="teams__card-empty-button button button--white" type="button" data-hystmodal="#add-user">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#add"/>
+                                        </svg>
+                                        <span>Добавить участника</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="teams__item">
+                            <div class="teams__card">
+                                <div class="teams__card-info">
+                                    <a class="teams__card-link" href="./teams-detail.html" title="Перейти на страницу команды"><h3 class="teams__card-title">Название команды</h3></a>
                                     <span class="teams__card-label">6 участников</span>
+                                    <button class="teams__card-button button button--white" type="button" data-hystmodal="#add-user">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#add"/>
+                                        </svg>
+                                        <span>Добавить участника</span>
+                                    </button>
                                 </div>
                                 <ul class="teams__card-users">
-                                    <li class="teams__card-user-image">
-                                        <img src="img/placeholder.jpg" alt="User">
+                                    <li class="teams__card-user">
+                                        <div class="teams__card-user-image">
+                                            <img src="img/placeholder.jpg" alt="User">
+                                        </div>
+                                        <h4 class="teams__card-user-name">Венге</h4>
+                                        <div class="teams__card-user-label">Куратор</div>
                                     </li>
-                                    <li class="teams__card-user-image">
-                                        <img src="img/placeholder.jpg" alt="User">
+                                    <li class="teams__card-user">
+                                        <div class="teams__card-user-image">
+                                            <img src="img/placeholder.jpg" alt="User">
+                                        </div>
+                                        <h4 class="teams__card-user-name">Алевтина</h4>
                                     </li>
-                                    <li class="teams__card-user-image">
-                                        <img src="img/placeholder.jpg" alt="User">
+                                    <li class="teams__card-user">
+                                        <div class="teams__card-user-image">
+                                            <img src="img/placeholder.jpg" alt="User">
+                                        </div>
+                                        <h4 class="teams__card-user-name">Григорий</h4>
+                                    </li>
+                                    <li class="teams__card-user">
+                                        <div class="teams__card-user-image">
+                                            <img src="img/placeholder.jpg" alt="User">
+                                        </div>
+                                        <h4 class="teams__card-user-name">Алевтина</h4>
+                                    </li>
+                                    <li class="teams__card-user">
+                                        <div class="teams__card-user-image">
+                                            <img src="img/placeholder.jpg" alt="User">
+                                        </div>
+                                        <h4 class="teams__card-user-name">Григорий</h4>
+                                    </li>
+                                    <li class="teams__card-user">
+                                        <div class="teams__card-user-image">
+                                            <img src="img/placeholder.jpg" alt="User">
+                                        </div>
+                                        <h4 class="teams__card-user-name">Алевтина</h4>
+                                    </li>
+                                    <li class="teams__card-user">
+                                        <div class="teams__card-user-more">
+                                            <div class="teams__card-user-more-text">еще +4</div>
+                                        </div>
                                     </li>
                                 </ul>
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </div>

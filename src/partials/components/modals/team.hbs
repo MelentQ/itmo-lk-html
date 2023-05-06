@@ -4,12 +4,15 @@
             <button class="hystmodal__close" data-hystclose></button>
             <div class="modal">
                 <div class="modal__heading-block">
-                    <h3 class="modal__heading">Создать команду</h3>
+                    <h3 class="modal__heading">Создание команды</h3>
                 </div>
                 <div class="modal__description">
-                    <p>Текст</p>
+                    <p>Создайте вашу команду, чтобы учавствовать в мероприятиях</p>
                 </div>
                 <form class="form js-form" action="#" data-need-validation>
+                    <div class="form__input-wrapper js-validation-wrapper">
+                        <input class="form__input" type="text" placeholder="Название команды" pattern="[ A-Za-zА-Яа-я1-9\-]*" required>
+                    </div>
                     <button class="button button--wide js-form-submit" type="submit">Создать команду</button>
                 </form>
             </div>

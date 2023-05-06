@@ -43,6 +43,30 @@
     @extend %fs-h-2;
   }
 
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    margin: 15rem 0;
+
+    @extend %fs-h-5;
+
+    @include breakpoint(tablet) {
+      margin: 8rem 0;
+    }
+  }
+
+  &__empty-button {
+    margin-top: 3.2rem;
+
+    @include breakpoint(tablet) {
+      margin-top: 1.8rem;
+    }
+  }
+
   // .teams__list
   &__list {
     display: flex;
@@ -70,9 +94,9 @@
 
   // .teams__card
   &__card {
-    @extend %interactive;
     display: grid;
     grid-template-columns: 3fr 7fr;
+    align-items: flex-start;
     gap: 3rem;
 
     @include breakpoint(tablet) {
@@ -89,6 +113,10 @@
     gap: 1.6rem;
   }
 
+  &__card-link {
+    @extend %interactive;
+  }
+
   // .teams__card-title
   &__card-title {
     @extend %fs-h-5;
@@ -98,6 +126,40 @@
   &__card-label {
     display: block;
     @extend %fs-body-m;
+  }
+
+  &__card-button {
+    margin-top: 1rem;
+
+    padding: 1.2rem 1.6rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__card-empty {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding: 3.6rem 3.2rem;
+    background-color: #F0F6FA;
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  }
+
+  &__card-empty-text {
+    @extend %fs-body-l;
+    font-size: 2rem;
+  }
+
+  &__card-empty-button {
+    padding: 1.2rem 1.6rem;
   }
 
   // .teams__card-users
@@ -110,6 +172,68 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
     }
+  }
+
+  &__card-user {
+
+  }
+
+  &__card-user-name {
+    margin-top: 0.8rem;
+
+    @extend %fs-body-s;
+  }
+
+  &__card-user-label {
+    margin-top: 0.4rem;
+
+    @extend %fs-body-s;
+
+    opacity: 0.5;
+  }
+
+  &__user-curator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2rem;
+
+    background-color: #F0F6FA;
+  }
+
+  &__user-curator-image {
+    position: relative;
+
+    width: 10rem;
+    height: 10rem;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8px;
+    margin-top: auto;
+  }
+
+  &__user-info-link {
+    opacity: 0.5;
+
+    @extend %fs-body-s;
   }
 
   // .teams__card-user-image
@@ -127,6 +251,32 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  &__card-user-more {
+    position: relative;
+
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+
+    background: #F0F6FA;
+  }
+
+  &__card-user-more-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    color: rgba(#758B9E, 0.5);
+
+    @extend %fs-body-s;
   }
 
   // .teams__label

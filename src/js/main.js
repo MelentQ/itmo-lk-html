@@ -11,6 +11,7 @@ import customSelects from "./customSelects";
 import fileUpload from "./fileUpload";
 import timer from "./timer";
 import modal from "./modal";
+import copy from "./copy";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,8 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
     anchorLinks();
     customSelects();
     fileUpload();
-    modal()
-    timer()
+    modal();
+    timer();
+    copy();
 });
 
 document.addEventListener('lazyloaded', () => {
